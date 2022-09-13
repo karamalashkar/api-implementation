@@ -18,8 +18,10 @@ else{
     $strong='yes';
 }
 
+$pass=hash("sha256", $password);
+
 $result = [
-    'password' => $password,
+    'password' => $pass,
     'strong' => $strong
 ];
 
